@@ -49,7 +49,7 @@ PREREQUISITES AND SETUP
 For x86 Assembly
 Ensure NASM, GCC, and GDB are installed. You can add the toolchain script to your PATH for easy access:
 
-echo 'export PATH=$PATH:~/ITSC204/scripts' >> ~/.bashrc
+echo 'export PATH=$PATH:~/computerarchitecture/scripts' >> ~/.bashrc
 
 
 For ARM Assembly
@@ -70,7 +70,7 @@ To enhance GDB, install GEF with curl or wget, then add it to your PATH.
 #-USE wget 
 bash -c "$(wget https://gef.blah.cat/sh -O -)"
 add toolchain script to PATH:
-echo 'export PATH=$PATH:~/ITSC204/scripts' >> ~/.bashrc
+echo 'export PATH=$PATH:~/computerarchitecture/scripts' >> ~/.bashrc
 
 
 Features
@@ -101,7 +101,7 @@ MAKE TOOLCHAIN EXECUTABLE:
 ls ~/itsc204
 sudo mv ~/itsc204/x86_toolchain.sh /usr/local/bin/
 mkdir -p ~/bin
-mv ~/itsc204/x86_toolchain.sh ~/bin/
+mv ~/computerarchitecture/x86_toolchain.sh ~/bin/
 echo 'export PATH="$PATH:$HOME/bin"' >> ~/.bashrc
 source ~/.bashrc  <----------------- // Not always neccessary/depends \\
 chmod +x ~/bin/x86_toolchain.sh
